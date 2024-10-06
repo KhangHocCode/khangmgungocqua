@@ -1,36 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .item-khung-3-tren, .item-khung-3-duoi, .item-khung-4, .item-khung-5-duoi {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column; /* Chuyển sang hiển thị cột cho màn hình nhỏ */
+    }
+    #content, #image {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 50px 20px; /* Giảm padding cho màn hình nhỏ */
+    }
+}
+
+
 .khung1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
 }
 .item-khung-1{
-    border: none;
     border-radius: 14px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 #logo {
     background-color: #DCDCDC;
-    color: black;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 40px;
     padding: 20px 35px;
     flex: 1;
+    text-align: center;
 }
 #menu {
     background-color: #DCDCDC;
-    margin: 10px 10px;
+    margin: 10px 20px;
     flex: 5.5;
     text-align: center;
+    margin-right: 20px;
 }
 #button{
     background-color: #DCDCDC;
-    margin: 10px 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 0px;
-    padding: 20px 25px;
+    margin-right: 17px;
+    padding: 10px 20px;
     flex: 1;
+    text-align: center;
 }
 /* khung2 */
 .khung2{
@@ -43,9 +67,9 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    background-color: #DCDCDC;
 }
 #content{
-    background-color: #DCDCDC;
     padding: 100px 60px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -54,7 +78,6 @@
     flex: 1;
 }
 #image{
-    background-color: #DCDCDC;
     padding: 200px 60px;
     margin-top: 100px;
     margin-left: 45px;
@@ -63,9 +86,11 @@
     flex: 1;
 }
 /* khung 3 */
-.khung-3-tren{
+.khung3-tren{
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 40px;
 }
 .item-khung-3-tren{
     background-color: #DCDCDC;
@@ -75,11 +100,9 @@
     align-items: center;
     padding-left: 300px;
     padding-right: 300px;
-    margin-top: 15px;
-    margin-right: 363px;
-    margin-bottom: 15px;
-    margin-left: 362px;
-    border: none;
+    }
+    h1{
+        margin: auto 12px;
     }
 .khung3-duoi{
     display: flex;
@@ -127,17 +150,12 @@
     align-items: center;
     padding-left: 300px;
     padding-right: 300px;
-    margin-top: 15px;
-    margin-right: 363px;
-    margin-bottom: 15px;
-    margin-left: 362px;
-    border: none;
 }
 .khung4-duoi{
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #F5F3F0;
 }
 .item-khung-4{
@@ -145,9 +163,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 50px;
     width: 200px;
     height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /* khung5 */
 .khung5-tren{
@@ -165,14 +184,8 @@
     align-items: center;
     padding-left: 300px;
     padding-right: 300px;
-    margin-top: 15px;
-    margin-right: 363px;
-    margin-bottom: 15px;
-    margin-left: 362px;
-    border: none;
 }
 .khung5-duoi{    display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -189,17 +202,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.item-khung-6-cuoi{
-    
     background-color: #DCDCDC;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    
-    border: none;
+    margin-top: 30px;
 }
 
 
